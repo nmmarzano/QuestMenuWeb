@@ -329,9 +329,9 @@ getRecipes = function(quantity){
 $(document).ready(function(){
   $("input").on("change paste keyup", function(){
     updateUserQuantities();
-    $("#normalPot").html(printRecipes(getRecipes(potQuantity.normal)));
-    $("#bronzePot").html(printRecipes(getRecipes(potQuantity.bronze)));
-    $("#silverPot").html(printRecipes(getRecipes(potQuantity.silver)));
-    $("#goldPot").html(printRecipes(getRecipes(potQuantity.gold)));
+    $("#normalPot textarea").html(printRecipes(getRecipes(potQuantity.normal)));
+    $("#bronzePot textarea").html(printRecipes(getRecipes(potQuantity.bronze)));
+    $("#silverPot textarea").html(printRecipes(getRecipes(potQuantity.silver)));
+    $("#goldPot textarea").html(printRecipes(getRecipes(potQuantity.gold)));
   });
 });
