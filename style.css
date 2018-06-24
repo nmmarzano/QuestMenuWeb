@@ -73,9 +73,9 @@ h1 {
 
 #normalPot{
   background-image:
-    linear-gradient(#6b786f,#6b786f),
-    linear-gradient(#627067,#627067),
-    linear-gradient(#5e675d,#5e675d);
+    linear-gradient(#8e9b92,#8e9b92),
+    linear-gradient(#798379,#798379),
+    linear-gradient(#666e67,#666e67);
   background-position:0% 0%, 0% 50%, 0% 100%;
   background-size:100% 34%;
 }
