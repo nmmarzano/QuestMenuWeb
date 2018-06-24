@@ -1,0 +1,57 @@
+body {
+  padding: 10px 20px;
+  background-color: #f9c01b;
+}
+
+h1 {
+  color: #fd9c00;
+  font-weight: bold;
+  text-shadow: 1px 1px black, 2px 0px white, 0px 2px white, -2px 0px white,
+    0px -2px white;
+}
+
+#results{
+  background-color: #fff3a7;
+  padding: 20px 20px;
+  border-radius:10px;
+}
+
+.ingredient-input {
+  background-color: #fff3a7;
+  padding: 0px 0px;
+  border-radius:10px;
+}
+.ingredient-input .pre-input{
+  background-color: #fd9c00;
+  position:absolute;
+  top:0;
+  left:15px;
+  width:10px;
+  border-radius:5px 0 0 5px;
+  height:100%;
+}
+.ingredient-input label{
+  padding-left:20px;
+  padding-top:10px;
+}
+.ingredient-input input{
+  margin-left:20px;
+  margin-bottom:10px;
+  background-color:#ffd986;
+  box-shadow:none;
+  border:none;
+  padding:5px 0px 5px 10px;
+  border-radius: 5px;
+}
+
+.ingredient-input hr{
+  margin-top:0px;
+  border:none;
+  padding:0px;
+  border-top: 2px solid #f9c01b;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
