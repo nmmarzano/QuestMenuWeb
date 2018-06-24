@@ -55,3 +55,54 @@ h1 {
   float: none;
   margin: 0 auto;
 }
+
+.pot{
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-repeat: no-repeat;
+  color:white;
+  font-weight:bold;
+  text-shadow: 0px 0px 2px grey;
+}
+
+.pot textarea{
+  background-image:none !important;
+  color:black;
+}
+
+#normalPot{
+  background-image:
+    linear-gradient(#6b786f,#6b786f),
+    linear-gradient(#627067,#627067),
+    linear-gradient(#5e675d,#5e675d);
+  background-position:0% 0%, 0% 50%, 0% 100%;
+  background-size:100% 34%;
+}
+
+#bronzePot{
+  background-image:
+    linear-gradient(#a03a14,#a03a14),
+    linear-gradient(#88250e,#88250e),
+    linear-gradient(#5f200f,#5f200f);
+  background-position:0% 0%, 0% 50%, 0% 100%;
+  background-size:100% 34%;
+}
+
+#silverPot{
+  background-image:
+    linear-gradient(#aed5e6,#aed5e6),
+    linear-gradient(#6a97ac,#6a97ac),
+    linear-gradient(#4b6684,#4b6684);
+  background-position:0% 0%, 0% 50%, 0% 100%;
+  background-size:100% 34%;
+}
+
+#goldPot{
+  background-image:
+    linear-gradient(#f3df40,#f3df40),
+    linear-gradient(#c2a734,#c2a734),
+    linear-gradient(#9b8822,#9b8822);
+  background-position:0% 0%, 0% 50%, 0% 100%;
+  background-size:100% 34%;
+}
