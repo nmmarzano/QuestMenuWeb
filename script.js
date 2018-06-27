@@ -306,7 +306,6 @@ updateUserQuantities = function(){
 getRecipes = function(quantity){
   let result=[];
   let canMake=true;
-  console.log("For quantity: "+quantity);
   for(recipe in RECIPES){
     for(quality in RECIPES[recipe]){
       canMake=true;
