@@ -306,6 +306,7 @@ updateUserQuantities = function(){
 getRecipes = function(quantity){
   let result=[];
   let canMake=true;
+  console.log("For quantity: "+quantity);
   for(recipe in RECIPES){
     for(quality in RECIPES[recipe]){
       canMake=true;
@@ -326,12 +327,16 @@ getRecipes = function(quantity){
   return result;
 };
 
+formatRecipes = function(recipes){
+  return recipes.replaceAll("\n","<br/>").replaceAll("\t","&nbsp;&nbsp;&nbsp;&nbsp;");
+};
+
 $(document).ready(function(){
   $("input").on("change paste keyup", function(){
     updateUserQuantities();
-    $("#normalPot textarea").html(printRecipes(getRecipes(potQuantity.normal)));
-    $("#bronzePot textarea").html(printRecipes(getRecipes(potQuantity.bronze)));
-    $("#silverPot textarea").html(printRecipes(getRecipes(potQuantity.silver)));
-    $("#goldPot textarea").html(printRecipes(getRecipes(potQuantity.gold)));
+    $("#normalPot .recipes").html(formatRecipes(printRecipes(getRecipes(potQuantity.normal))));
+    $("#bronzePot .recipes").html(formatRecipes(printRecipes(getRecipes(potQuantity.bronze))));
+    $("#silverPot .recipes").html(formatRecipes(printRecipes(getRecipes(potQuantity.silver))));
+    $("#goldPot .recipes").html(formatRecipes(printRecipes(getRecipes(potQuantity.gold))));
   });
 });
